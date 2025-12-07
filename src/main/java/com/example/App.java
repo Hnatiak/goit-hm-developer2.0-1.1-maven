@@ -1,0 +1,17 @@
+package com.example;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.google.gson.Gson;
+
+public class App {
+    public static void main(String[] args) {
+        Map<String, String> person = new HashMap<>();
+        person.put("name", "Igor");
+        person.put("lastName", "Petrenko");
+
+        Gson gson = new Gson();
+        System.out.println(gson.toJson(person));
+    }
+}
